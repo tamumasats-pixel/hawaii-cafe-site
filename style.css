@@ -745,3 +745,35 @@ footer .social a { text-decoration: none; }
   .order-layout { grid-template-columns: 1fr; }
   .cart-panel { position: static; }
 }
+
+/* ---------- TEST SITE MARKERS ---------- */
+.test-banner {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  background: repeating-linear-gradient(45deg, #ffd400, #ffd400 16px, #222 16px, #222 32px);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 30px;
+  height: 30px;
+  text-shadow: 0 0 4px #000, 0 0 4px #000, 0 0 6px #000;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav { top: 30px; }
+body::after {
+  content: "TEST";
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  font-size: 22vw;
+  font-weight: 900;
+  color: rgba(255, 0, 0, 0.07);
+  pointer-events: none;
+  z-index: 150;
+  letter-spacing: 1vw;
+}
+.hero { padding-top: 30px; }
