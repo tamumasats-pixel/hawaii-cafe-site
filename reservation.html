@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>来店予約 | Aloha Sun Café</title>
+<meta name="description" content="Aloha Sun Caféのご来店予約はこちらから。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <div class="logo">🌺 Aloha Sun Café</div>
+  <ul class="links">
+    <li><a class="link" href="index.html#about">Story</a></li>
+    <li><a class="link" href="index.html#menu">Menu</a></li>
+    <li><a class="link" href="index.html#gallery">Gallery</a></li>
+    <li><a class="link" href="index.html#info">Access</a></li>
+    <li><a class="nav-cta" href="reservation.html">来店予約</a></li>
+  </ul>
+</nav>
+
+<header class="res-hero">
+  <span class="hero-eyebrow">RESERVATION</span>
+  <h1>来店予約</h1>
+  <p>フォームにご入力いただくと、お客様のメールソフトで予約リクエストメールの下書きが作成されます。内容をご確認のうえ送信してください。</p>
+</header>
+
+<div class="container">
+  <div class="res-wrap reveal in">
+
+    <form class="res-form" novalidate>
+      <div class="res-grid">
+        <div class="field">
+          <label>お名前 <span class="req">*</span></label>
+          <input type="text" name="name" placeholder="山田 花子" required>
+        </div>
+        <div class="field">
+          <label>電話番号 <span class="req">*</span></label>
+          <input type="tel" name="phone" placeholder="090-1234-5678" required>
+        </div>
+        <div class="field">
+          <label>メールアドレス <span class="req">*</span></label>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label>人数 <span class="req">*</span></label>
+          <select name="guests" required>
+            <option value="">選択してください</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7名以上</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>ご来店日 <span class="req">*</span></label>
+          <input type="date" name="date" required>
+        </div>
+        <div class="field">
+          <label>ご来店時間 <span class="req">*</span></label>
+          <input type="time" name="time" required>
+        </div>
+
+        <div class="field full">
+          <label>お席のご希望</label>
+          <div class="seat-options">
+            <label><input type="radio" name="seat" value="anywhere" checked><span>🌿 おまかせ</span></label>
+            <label><input type="radio" name="seat" value="window"><span>🪟 窓際席</span></label>
+            <label><input type="radio" name="seat" value="terrace"><span>🌴 テラス席</span></label>
+            <label><input type="radio" name="seat" value="counter"><span>☕ カウンター席</span></label>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label>ご要望・アレルギー等</label>
+          <textarea name="notes" rows="4" placeholder="記念日のお祝い、ベビーカー利用、アレルギーなどあればご記入ください"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="res-submit">この内容で予約リクエストを作成する</button>
+      <p class="res-note">※ 本サイトはテスト公開用のサンプルです。実際の予約はメール送信をもって仮受付となり、店舗からの確認連絡で確定します。</p>
+    </form>
+
+    <div class="res-confirm">
+      <div class="check">✓</div>
+      <h3>ご入力ありがとうございました！</h3>
+      <p style="color:#6b7f7d;">以下の内容でメールの下書きを作成しました。内容をご確認のうえ送信してください。</p>
+      <div class="res-summary"></div>
+      <div class="btn-row" style="margin-top:10px;">
+        <a href="#" class="btn btn-primary res-mail-link">✉️ 予約メールを開く</a>
+        <button class="btn btn-outline res-reset" style="border-color:#17b3a3;color:#17b3a3;background:transparent;">別の内容で入力し直す</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="perks reveal in">
+    <div class="perk">
+      <div class="ico">🕒</div>
+      <h4>24時間以内にご返信</h4>
+      <p>営業時間内にいただいたご予約は当日中にご連絡いたします。</p>
+    </div>
+    <div class="perk">
+      <div class="ico">🎂</div>
+      <h4>記念日のご相談OK</h4>
+      <p>誕生日・記念日はメッセージプレートなどのご用意も可能です。</p>
+    </div>
+    <div class="perk">
+      <div class="ico">🐾</div>
+      <h4>ペット同伴テラス</h4>
+      <p>テラス席は小型犬の同伴も歓迎しています。</p>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-top:80px;">
+  <div class="logo" style="justify-content:center;color:#fff;margin-bottom:14px;">🌺 Aloha Sun Café</div>
+  <p>&copy; 2026 Aloha Sun Café. This is a sample site created for a GitHub Pages test — all information is fictional.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
