@@ -196,7 +196,10 @@ if (resForm) {
       resForm.reset();
       document.querySelector('.res-form').classList.remove('hide');
       document.querySelector('.res-confirm').classList.remove('show');
-      if (dateInput) renderSlots(dateInput.value);
+      if (dateInput) {
+        dateInput.value = dateInput.value || new Date().toISOString().slice(0, 10);
+        renderSlots(dateInput.value);
+      }
     });
   }
 }
