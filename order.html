@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>モバイルオーダー（テイクアウト）| Aloha Sun Café</title>
+<meta name="description" content="Aloha Sun Caféのテイクアウト事前注文はこちらから。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <div class="logo">🌺 Aloha Sun Café</div>
+  <ul class="links">
+    <li><a class="link" href="index.html#about">Story</a></li>
+    <li><a class="link" href="index.html#menu">Menu</a></li>
+    <li><a class="link" href="index.html#gallery">Gallery</a></li>
+    <li><a class="link" href="index.html#info">Access</a></li>
+    <li><a class="link" href="reservation.html">来店予約</a></li>
+    <li><a class="nav-cta" href="order.html">モバイルオーダー</a></li>
+  </ul>
+</nav>
+
+<header class="res-hero" style="background-image:linear-gradient(135deg, rgba(14,45,42,0.75), rgba(14,45,42,0.55)), url('https://images.pexels.com/photos/34992891/pexels-photo-34992891/free-photo-of-colorful-fruit-smoothies-in-modern-cafe-setting.jpeg?auto=compress&cs=tinysrgb&w=1600');">
+  <span class="hero-eyebrow">TAKEOUT · MOBILE ORDER</span>
+  <h1>モバイルオーダー</h1>
+  <p>事前に注文・お支払い内容を送信すれば、お店では待たずにお受け取りいただけます。</p>
+</header>
+
+<div class="container">
+  <div class="order-form-wrap">
+    <div class="order-tabs reveal in">
+      <button class="active" data-cat="all">全部</button>
+      <button data-cat="food">フード</button>
+      <button data-cat="drink">ドリンク</button>
+      <button data-cat="sweets">スイーツ</button>
+    </div>
+
+    <div class="order-layout">
+      <div class="order-grid reveal in">
+
+        <div class="order-card" data-id="acai" data-name="アサイーボウル" data-price="980" data-cat="sweets">
+          <div class="photo"><img src="https://images.pexels.com/photos/3035261/pexels-photo-3035261.jpeg?auto=compress&cs=tinysrgb&w=600" alt="アサイーボウル" loading="lazy"></div>
+          <div class="body">
+            <h4>アサイーボウル</h4>
+            <p class="desc">グラノーラ・バナナ・ココナッツフレーク</p>
+            <div class="row">
+              <span class="price">¥980</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card" data-id="locomoco" data-name="ロコモコプレート" data-price="1280" data-cat="food">
+          <div class="photo"><img src="https://images.pexels.com/photos/14071120/pexels-photo-14071120.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ロコモコプレート" loading="lazy"></div>
+          <div class="body">
+            <h4>ロコモコプレート</h4>
+            <p class="desc">特製グレイビーソースのハンバーグ丼</p>
+            <div class="row">
+              <span class="price">¥1,280</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card" data-id="smoothie" data-name="トロピカルスムージー" data-price="720" data-cat="drink">
+          <div class="photo"><img src="https://images.pexels.com/photos/34992891/pexels-photo-34992891/free-photo-of-colorful-fruit-smoothies-in-modern-cafe-setting.jpeg?auto=compress&cs=tinysrgb&w=600" alt="トロピカルスムージー" loading="lazy"></div>
+          <div class="body">
+            <h4>トロピカルスムージー</h4>
+            <p class="desc">マンゴー・パイナップル・パッションフルーツ</p>
+            <div class="row">
+              <span class="price">¥720</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card" data-id="kona" data-name="コナコーヒー" data-price="580" data-cat="drink">
+          <div class="photo"><img src="https://images.pexels.com/photos/25344488/pexels-photo-25344488/free-photo-of-coffee-beans-on-cotton-bag.jpeg?auto=compress&cs=tinysrgb&w=600" alt="コナコーヒー" loading="lazy"></div>
+          <div class="body">
+            <h4>コナコーヒー</h4>
+            <p class="desc">ハワイ島直送の豆をハンドドリップ</p>
+            <div class="row">
+              <span class="price">¥580</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card" data-id="brunch" data-name="アロハブランチセット" data-price="1450" data-cat="food">
+          <div class="photo"><img src="https://images.pexels.com/photos/34431839/pexels-photo-34431839/free-photo-of-outdoor-cafe-overlooking-gucci-storefront.jpeg?auto=compress&cs=tinysrgb&w=600" alt="アロハブランチセット" loading="lazy"></div>
+          <div class="body">
+            <h4>アロハブランチセット</h4>
+            <p class="desc">サンドイッチ・スープ・小さなデザート付き</p>
+            <div class="row">
+              <span class="price">¥1,450</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-card" data-id="haupia" data-name="ハウピアパイ" data-price="650" data-cat="sweets">
+          <div class="photo"><img src="https://images.pexels.com/photos/32892527/pexels-photo-32892527/free-photo-of-refreshing-coconut-dessert-with-kiwi-garnish.jpeg?auto=compress&cs=tinysrgb&w=600" alt="ハウピアパイ" loading="lazy"></div>
+          <div class="body">
+            <h4>ハウピアパイ</h4>
+            <p class="desc">ココナッツミルクのやさしい甘さ</p>
+            <div class="row">
+              <span class="price">¥650</span>
+              <button type="button" class="qty-add">カートに追加</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cart-panel reveal in">
+        <h3>🛍️ ご注文カート</h3>
+        <div class="cart-empty">カートに商品がありません</div>
+        <div class="cart-items"></div>
+        <div class="cart-total"><span>合計</span><span class="amount">¥0</span></div>
+
+        <form class="order-form">
+          <div class="checkout-fields">
+            <input type="text" name="name" placeholder="お名前" required>
+            <input type="tel" name="phone" placeholder="電話番号" required>
+            <select id="pickup-time" name="pickup" required>
+              <option value="">受け取り時間を選択</option>
+            </select>
+            <input type="text" name="notes" placeholder="ご要望（アレルギー等・任意）">
+          </div>
+          <p class="pickup-note">※ 店舗受け取り専用です。お支払いは店頭にて承ります。</p>
+          <button type="submit" class="order-checkout-btn" disabled>この内容で注文リクエストを送る</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="res-wrap order-confirm">
+    <div class="check">✓</div>
+    <h3 style="color:var(--turquoise-dark);margin-bottom:8px;">ご注文ありがとうございました！</h3>
+    <p style="color:#6b7f7d;">以下の内容でメールの下書きを作成しました。内容をご確認のうえ送信してください。</p>
+    <div class="order-summary"></div>
+    <div class="btn-row" style="margin-top:10px;justify-content:center;">
+      <a href="#" class="btn btn-primary order-mail-link">✉️ 注文メールを開く</a>
+      <button class="btn btn-outline order-reset" style="border-color:#17b3a3;color:#17b3a3;background:transparent;">別の内容で注文し直す</button>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-top:80px;">
+  <div class="logo" style="justify-content:center;color:#fff;margin-bottom:14px;">🌺 Aloha Sun Café</div>
+  <p>&copy; 2026 Aloha Sun Café. This is a sample site created for a GitHub Pages test — all information is fictional.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

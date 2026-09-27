@@ -16,6 +16,7 @@
     <li><a class="link" href="index.html#menu">Menu</a></li>
     <li><a class="link" href="index.html#gallery">Gallery</a></li>
     <li><a class="link" href="index.html#info">Access</a></li>
+    <li><a class="link" href="order.html">モバイルオーダー</a></li>
     <li><a class="nav-cta" href="reservation.html">来店予約</a></li>
   </ul>
 </nav>
@@ -23,7 +24,7 @@
 <header class="res-hero">
   <span class="hero-eyebrow">RESERVATION</span>
   <h1>来店予約</h1>
-  <p>フォームにご入力いただくと、お客様のメールソフトで予約リクエストメールの下書きが作成されます。内容をご確認のうえ送信してください。</p>
+  <p>日付を選ぶと空いている時間帯が一覧で表示されます。ご希望の時間を選んでフォームにご入力ください。</p>
 </header>
 
 <div class="container">
@@ -51,13 +52,22 @@
             <option>5</option><option>6</option><option>7名以上</option>
           </select>
         </div>
-        <div class="field">
+        <div class="field full">
           <label>ご来店日 <span class="req">*</span></label>
-          <input type="date" name="date" required>
+          <input type="date" name="date" id="res-date" required>
         </div>
-        <div class="field">
-          <label>ご来店時間 <span class="req">*</span></label>
-          <input type="time" name="time" required>
+
+        <div class="field full">
+          <label>空き状況・ご来店時間 <span class="req">*</span></label>
+          <div class="slot-legend">
+            <span><i class="dot dot-free"></i>空きあり</span>
+            <span><i class="dot dot-few"></i>残りわずか</span>
+            <span><i class="dot dot-full"></i>満席</span>
+          </div>
+          <div class="slot-grid" id="slot-grid">
+            <p class="slot-hint">↑ まずご来店日を選択してください</p>
+          </div>
+          <input type="hidden" name="time" id="res-time" required>
         </div>
 
         <div class="field full">
@@ -76,8 +86,8 @@
         </div>
       </div>
 
-      <button type="submit" class="res-submit">この内容で予約リクエストを作成する</button>
-      <p class="res-note">※ 本サイトはテスト公開用のサンプルです。実際の予約はメール送信をもって仮受付となり、店舗からの確認連絡で確定します。</p>
+      <button type="submit" class="res-submit" id="res-submit-btn" disabled>時間帯を選択してください</button>
+      <p class="res-note">※ 本サイトはテスト公開用のサンプルです。空き状況はデモ表示（お使いのブラウザ内のみで予約状況を保持）で、実際の予約はメール送信をもって仮受付となり、店舗からの確認連絡で確定します。</p>
     </form>
 
     <div class="res-confirm">
